@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FalconX | Private VPN for locked-down networks</title>
+  <meta name="description" content="FalconX is a demo VPN storefront with Shadow Mode, dedicated servers, household device sharing, and personal, business, and VIP plans.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Private access that stays a step ahead</h1>
+          <p class="lede">Shadow Mode is shaped for networks that interfere with ordinary tunnels, with dedicated servers worldwide and people on call for travelers and remote teams.</p>
+          <ul class="checks">
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg><span><strong>FalconX Shadow Mode.</strong> A private protocol that makes VPN traffic harder to single out on locked-down networks.</span></li>
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg><span><strong>Encryption on the tunnel.</strong> Traffic is protected between your device and the FalconX server. Bitcoin checkout is available.</span></li>
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg><span><strong>Dedicated servers.</strong> 120 cities in 48 countries, run on hardware sized for steady throughput.</span></li>
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg><span><strong>Specialists around the clock.</strong> Message the desk any hour. FalconX has served customers since 2012.</span></li>
+          </ul>
+          <form class="signup-row" data-signup>
+            <label class="visually-hidden" for="hero-email" style="position:absolute;left:-999px">Email</label>
+            <input id="hero-email" type="email" placeholder="Enter your e-mail" autocomplete="email" required>
+            <button class="btn btn-solid" type="submit">Sign up now</button>
+          </form>
+          <p class="form-error" role="status"></p>
+          <p class="fine">Encrypted checkout. Install takes a few minutes. Browse privately shortly after.</p>
+        </div>
+        <div class="hero-visual">
+          <div class="laptop" aria-hidden="true">
+            <div class="screen">
+              <div class="pane with">
+                <span class="pane-label">WITH FALCONX</span>
+                <div class="lock-badge">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                </div>
+              </div>
+              <div class="pane without">
+                <span class="pane-label">WITHOUT</span>
+                <p class="gibberish">k9!a0 / qe-22<br>mx]p0 # rT<br>// open mail<br>route=clear</p>
+                <svg class="envelope" viewBox="0 0 74 52"><rect x="2" y="8" width="70" height="40" rx="4" fill="#fff" stroke="#d0d5e4"/><path d="M4 10l33 22L70 10" fill="none" stroke="#e24b4b" stroke-width="2"/></svg>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone-ui">
+              <strong>FalconX</strong>
+              <div class="toggle">ON <i></i></div>
+              <div class="fake-select">City · Singapore</div>
+              <div class="fake-select">Shadow Mode</div>
+              <div class="connect">Protected</div>
+            </div>
+          </div>
+          <div class="os-row">
+            <a href="download.html#windows" aria-label="Windows">Windows<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5l8-1v8H3V5zm9-1.2L21 2v10h-9V3.8zM3 13h8v8l-8-1v-7zm9 0h9v10l-9-1.2V13z"/></svg></a>
+            <a href="download.html#macos" aria-label="macOS">Mac<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6c.8-1 1.4-2.3 1.2-3.6-1.2.1-2.6.8-3.4 1.8-.7.9-1.4 2.3-1.2 3.5 1.3.1 2.6-.7 3.4-1.7zM12.2 8.2c-1.8 0-3.4 1.1-4.3 1.1-.9 0-2.3-1-3.8-1-1.9 0-3.7 1.1-4.7 2.9-2 3.5-.5 8.6 1.4 11.4.9 1.4 2 2.9 3.5 2.8 1.4 0 1.9-.9 3.6-.9s2.1.9 3.6.9 2.4-1.4 3.3-2.8c1-.1 2-1.6 2.8-3-3.3-1.3-3.9-6-.1-7.7-.9-1.1-2.2-1.7-3.3-1.7z"/></svg></a>
+            <a href="download.html#ios" aria-label="iOS">iOS<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="18" r="0.8" fill="currentColor"/></svg></a>
+            <a href="download.html#linux" aria-label="Linux">Linux<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M7 20c1-4 3-6 5-6s4 2 5 6"/><circle cx="10.5" cy="7.5" r="0.7"/><circle cx="13.5" cy="7.5" r="0.7"/></svg></a>
+            <a href="download.html#android" aria-label="Android">Android<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 9h10v8a2 2 0 0 1-2 2h-1v2h-2v-2H12v2H10v-2H9a2 2 0 0 1-2-2V9zm-2 1h2v6H5v-6zm14 0h2v6h-2v-6zM9 4l-1-2h2l.5 1.2L12 2h0l1.5 1.2L14 2h2l-1 2"/></svg></a>
+            <a href="download.html#router" aria-label="Routers">Router<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 15a7 7 0 0 1 14 0"/><path d="M8 15a4 4 0 0 1 8 0"/><circle cx="12" cy="17" r="1.4" fill="currentColor"/><path d="M12 18v3"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seen">
+      <div class="container">
+        <p>Seen on</p>
+        <div class="logo-row" aria-label="Sample publication names">
+          <span class="wordmark sans">FIELDNOTE</span>
+          <span class="wordmark script">Northline</span>
+          <span class="wordmark sans">DESK REPORT</span>
+          <span class="wordmark">circuit</span>
+          <span class="wordmark script">Harbor Journal</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <h2>Why people choose FalconX</h2>
+        <div class="why-grid">
+          <article>
+            <div class="icon-bubble">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="28" r="10"/><path d="M20 50c2-8 8-12 12-12s10 4 12 12"/><path d="M14 18l6 4M50 18l-6 4"/></svg>
+            </div>
+            <h3>Hide your address</h3>
+            <p>Sites and apps see the FalconX exit instead of the network you are sitting on.</p>
+          </article>
+          <article>
+            <div class="icon-bubble">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="6"/><path d="M32 16v6M32 42v6M16 32h6M42 32h6"/></svg>
+            </div>
+            <h3>Encrypt the session</h3>
+            <p>The tunnel runs in the background so a shared Wi-Fi cannot read the payload.</p>
+          </article>
+          <article>
+            <div class="icon-bubble">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="32" r="14"/><path d="M32 22v12l8 4"/></svg>
+            </div>
+            <h3>Dedicated machines</h3>
+            <p>FalconX runs its own servers in major regions so streams and calls are less likely to stall.</p>
+          </article>
+          <article>
+            <div class="icon-bubble">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="26" r="6"/><circle cx="40" cy="26" r="6"/><path d="M12 48c1-8 6-12 12-12s11 4 12 12M28 48c1-8 6-12 12-12 5 0 9 3 11 8"/></svg>
+            </div>
+            <h3>Five devices at once</h3>
+            <p>A personal plan covers five devices online together, on any city in the network.</p>
+          </article>
+        </div>
+        <div class="info-row">
+          <article class="info-card">
+            <button class="play" type="button" data-video="How FalconX works" aria-label="Play how FalconX works">
+              <svg width="28" height="28" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#ff5a3c"/><path d="M10 8l7 4-7 4V8z" fill="#fff"/></svg>
+            </button>
+            <div>
+              <h3>Watch the overview</h3>
+              <button class="text-link" type="button" data-video="How FalconX works" style="background:none;border:0;padding:0">How FalconX works</button>
+            </div>
+          </article>
+          <article class="info-card">
+            <div>
+              <h3>Learn more about</h3>
+              <div class="links-inline">
+                <a class="text-link" href="what-is-vpn.html">What is a VPN?</a>
+                <a class="text-link" href="features.html">FalconX features</a>
+                <a class="text-link" href="about.html">Why FalconX</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section perks" id="included">
+      <div class="container">
+        <h2>Why FalconX stays on the short list</h2>
+        <p class="eyebrow">Included with every plan</p>
+        <div class="perk-grid">
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="12" height="9" rx="1"/><rect x="9" y="9" width="12" height="9" rx="1"/></svg>Several devices at once</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8c4 0 4 8 8 8M18 16c-4 0-4-8-8-8"/></svg>No bandwidth cap</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M10 18h4"/></svg>Switch servers freely</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 16a7 7 0 0 1 14 0"/><path d="M12 12v5"/></svg>Full line speed</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="9" r="3"/><path d="M6 19c1-3 3-5 6-5s5 2 6 5"/></svg>Support all day</div>
+        </div>
+        <div class="perk-grid three">
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 16l6-8 4 5 2-3 4 6H4z"/></svg>No activity logs</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M10 10h3a2 2 0 0 1 0 4h-3"/></svg>Bitcoin welcome</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2 2.5 2 13 0 16M12 4c-2 2.5-2 13 0 16"/></svg>Servers in 48 countries</div>
+        </div>
+        <form class="signup-row perk-form" data-signup>
+          <label class="visually-hidden" for="perk-email" style="position:absolute;left:-999px">Email</label>
+          <input id="perk-email" type="email" placeholder="Enter your e-mail" autocomplete="email" required>
+          <button class="btn btn-solid" type="submit">Sign up now</button>
+        </form>
+        <p class="form-error" role="status"></p>
+        <p class="fine">Encrypted checkout. Install takes a few minutes. Browse privately shortly after.</p>
+      </div>
+    </section>
+
+    <section class="section" id="speed">
+      <div class="container speed-grid">
+        <article class="compare">
+          <svg viewBox="0 0 160 180" aria-hidden="true">
+            <rect width="160" height="180" fill="#fff"/>
+            <path d="M78 40c-8 8-6 18 2 22 4-8 10-10 16-8-2 8 2 16 10 18-12 2-18 12-16 22-10-2-20 2-24 10-8-8-20-6-24 2 2-14-6-24-16-26 8-4 10-14 6-22 8 2 16-2 18-10 6 4 14 2 18-8z" fill="#f2b23d"/>
+            <circle cx="92" cy="58" r="3" fill="#1d2340"/>
+            <path d="M70 150h30l-4 16H74z" fill="#e24b4b"/>
+          </svg>
+          <h3>Shared budget</h3>
+          <span>SERVERS</span>
+        </article>
+        <article class="compare strong">
+          <svg viewBox="0 0 180 180" aria-hidden="true">
+            <rect width="180" height="180" fill="#fff"/>
+            <path d="M20 90c28-8 48-30 62-58 6 22 20 40 48 50-28 8-46 28-58 54-8-20-26-36-52-46z" fill="#2a3b86"/>
+            <path d="M118 70c18 4 32 16 38 32-16 0-28 6-36 16 2-18 0-32-2-48z" fill="#ff5a3c"/>
+          </svg>
+          <svg viewBox="0 0 140 28" aria-hidden="true" style="height:28px"><text x="8" y="20" font-family="Nunito, sans-serif" font-size="16" font-weight="800" fill="#24357a">FalconX</text></svg>
+          <span>SERVERS</span>
+        </article>
+        <div class="speed-copy">
+          <h2>FalconX is built for speed</h2>
+          <p>Many low-cost VPNs resell crowded virtual machines. FalconX runs dedicated hardware in each city so large downloads and calls keep their pace.</p>
+          <a class="btn btn-ghost" href="network.html#speed">Read more</a>
+          <p><a class="text-link" href="network.html#speed">See sample speed checks ›</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coverage" style="padding-top:10px">
+      <div class="container world-grid">
+        <div>
+          <h2>Servers across the map</h2>
+          <p class="muted">VPN locations in 120 cities and 48 countries</p>
+          <ul class="country-cols">
+            <li>United States</li><li>France</li>
+            <li>United Kingdom</li><li>Spain</li>
+            <li>India</li><li>Brazil</li>
+            <li>Japan</li><li>Italy</li>
+            <li>Netherlands</li><li>Switzerland</li>
+            <li>Canada</li><li>Sweden</li>
+            <li>Germany</li><li>Czech Republic</li>
+          </ul>
+          <a class="text-link" href="network.html">See every location ›</a>
+        </div>
+        <div class="map-card" aria-hidden="true">
+          <svg viewBox="0 0 640 360">
+            <rect width="640" height="360" fill="#f7f8fd"/>
+            <g fill="#d9def3">
+              <ellipse cx="140" cy="140" rx="90" ry="60"/>
+              <ellipse cx="150" cy="230" rx="40" ry="55"/>
+              <ellipse cx="300" cy="120" rx="70" ry="48"/>
+              <ellipse cx="330" cy="210" rx="36" ry="50"/>
+              <ellipse cx="470" cy="140" rx="100" ry="58"/>
+              <ellipse cx="520" cy="250" rx="46" ry="28"/>
+            </g>
+            <g fill="#6d7ed0">
+              <circle cx="120" cy="120" r="5"/><circle cx="160" cy="150" r="4"/><circle cx="180" cy="210" r="4"/>
+              <circle cx="280" cy="110" r="5"/><circle cx="320" cy="140" r="4"/><circle cx="340" cy="200" r="4"/>
+              <circle cx="430" cy="130" r="5"/><circle cx="490" cy="150" r="4"/><circle cx="540" cy="170" r="4"/>
+              <circle cx="500" cy="240" r="4"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apps" style="background:#fbfbfe">
+      <div class="container apps-grid">
+        <div class="device-cluster" aria-hidden="true">
+          <div class="green-laptop"><div class="lock-screen"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div>FalconX</div></div></div>
+          <div class="mini-phone"><strong>FalconX</strong><div class="toggle" style="transform:scale(.8)">ON <i></i></div></div>
+          <div class="tower"></div>
+          <div class="pad"></div>
+        </div>
+        <div class="apps-copy">
+          <h2>Every license includes the apps</h2>
+          <p class="kicker">No setup expertise required</p>
+          <p class="muted">FalconX ships apps for Windows, macOS, Linux, iOS, Android, and a router applet. Filters, App Guard, and smart routing are in the same build. Put the tunnel on the router and every device on that Wi-Fi can use it.</p>
+          <div class="os-row dark">
+            <a href="download.html#windows" aria-label="Windows"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5l8-1v8H3V5zm9-1.2L21 2v10h-9V3.8zM3 13h8v8l-8-1v-7zm9 0h9v10l-9-1.2V13z"/></svg></a>
+            <a href="download.html#macos" aria-label="macOS"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 7c-.7.8-1.8 1.4-2.9 1.3-.1-1.1.4-2.3 1.1-3 0 0 .8-.8 1.8-1.1-.2.9-.1 1.9 0 2.8zM14 8.4c-1.6-.1-3 .9-3.8.9s-2-.9-3.3-.8c-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.3 2.5 1.3 0 1.8-.8 3.4-.8s2 .8 3.4.8 2.3-1.3 3.1-2.6c1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1 0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.8-2z"/></svg></a>
+            <a href="download.html#ios" aria-label="iOS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></a>
+            <a href="download.html#linux" aria-label="Linux"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M7 20c1-4 3-6 5-6s4 2 5 6"/></svg></a>
+            <a href="download.html#android" aria-label="Android"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 9h10v8a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V9z"/></svg></a>
+            <a href="download.html#router" aria-label="Router"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 15a7 7 0 0 1 14 0"/><circle cx="12" cy="17" r="1.4" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit" id="plans">
+      <div class="container">
+        <h2>Which plan fits?</h2>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-top">
+              <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="12" fill="#d9e0fb"/><path d="M14 54c2-12 10-18 18-18s16 6 18 18" fill="#c5d0f6"/><circle cx="32" cy="22" r="6" fill="#8ea0e8"/></svg>
+              <div>
+                <h3>Personal VPN</h3>
+                <span class="kicker">Take your privacy back</span>
+              </div>
+            </div>
+            <ul class="ticks">
+              <li><svg width="16" height="16" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg> Five devices at home</li>
+              <li><svg width="16" height="16" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg> Reach the web as if you were home</li>
+              <li><svg width="16" height="16" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg> Keep everyday traffic private</li>
+            </ul>
+            <a class="btn btn-solid" href="signup.html?plan=year2">Sign up now</a>
+            <p class="plan-note">Setup is short. You can be online in a few minutes.</p>
+          </article>
+          <article class="plan-card">
+            <div class="plan-top">
+              <svg width="84" height="72" viewBox="0 0 84 64" aria-hidden="true"><circle cx="22" cy="24" r="10" fill="#d9e0fb"/><circle cx="42" cy="22" r="12" fill="#c5d0f6"/><circle cx="62" cy="24" r="10" fill="#d9e0fb"/></svg>
+              <div>
+                <h3>Business VPN</h3>
+                <span class="kicker">Cover the company</span>
+              </div>
+            </div>
+            <ul class="ticks">
+              <li><svg width="16" height="16" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg> Protect work mail in transit</li>
+              <li><svg width="16" height="16" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg> Reduce exposure on travel networks</li>
+              <li><svg width="16" height="16" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#ff5a3c"/><path d="M5 9.2l2.4 2.4L13 6.5" fill="none" stroke="#fff" stroke-width="2"/></svg> Seat accounts for the team</li>
+            </ul>
+            <a class="btn btn-ghost" href="business.html">See pricing</a>
+            <p class="plan-note">One organization. Many people. Clearer per-seat math.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <h2>Notes from long-time customers</h2>
+        <div class="review-grid">
+          <article class="review-card"><div class="review-top"><span>Mina</span><span class="stars">★★★★★</span></div><p>One switch after the first setup. I leave it on and forget the client is running.</p><div class="who">Australia</div></article>
+          <article class="review-card"><div class="review-top"><span>Elena</span><span class="stars">★★★★★</span></div><p>Clear enough for a first VPN. The city list is the part I actually use.</p><div class="who">Finland</div></article>
+          <article class="review-card"><div class="review-top"><span>Chris</span><span class="stars">★★★★★</span></div><p>Stable on hotel Wi-Fi. Calls stopped dropping once Shadow Mode was on.</p><div class="who">United States</div></article>
+          <article class="review-card"><div class="review-top"><span>Omar</span><span class="stars">★★★★★</span></div><p>Support answered overnight when my router applet needed a reset.</p><div class="who">Germany</div></article>
+          <article class="review-card"><div class="review-top"><span>Priya</span><span class="stars">★★★★★</span></div><p>Worth it for the dedicated servers. Video stays smooth in the evening.</p><div class="who">India</div></article>
+          <article class="review-card"><div class="review-top"><span>Luis</span><span class="stars">★★★★★</span></div><p>Fast from Manila to the Tokyo exit. Simple enough that I did not open the wiki.</p><div class="who">Philippines</div></article>
+        </div>
+        <a class="text-link" href="reviews.html">See all reviews (12,480) ›</a>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <svg class="deco left" width="90" height="90" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="28" fill="#eef1ff"/><circle cx="28" cy="34" r="6" fill="#d5dcfb"/><circle cx="48" cy="30" r="4" fill="#d5dcfb"/></svg>
+      <div class="container">
+        <div class="price-head">
+          <h2>Personal plan pricing</h2>
+          <p class="subcenter">Every personal plan includes five simultaneous connections in one household</p>
+          <p class="biz-link">Looking for a company plan? <a class="text-link" href="business.html">See pricing ›</a></p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>1 Month</h3>
+            <div class="amount">$29</div>
+            <div class="per">PER MONTH</div>
+            <hr>
+            <p>Pay <strong>$29</strong> for 1 month</p>
+            <a class="btn btn-solid" href="signup.html?plan=month">Start now</a>
+          </article>
+          <article class="price-card featured">
+            <div class="badge">MOST POPULAR</div>
+            <h3>2 Years</h3>
+            <div class="amount">$12.50</div>
+            <div class="per">PER MONTH</div>
+            <hr>
+            <p class="was">Pay $696</p>
+            <p class="now">$300 for 2 years</p>
+            <a class="btn btn-solid" href="signup.html?plan=year2">Start now</a>
+          </article>
+          <article class="price-card span">
+            <h3>1 Year</h3>
+            <div class="amount">$15</div>
+            <div class="per">PER MONTH</div>
+            <hr>
+            <p class="was">Pay $348</p>
+            <p class="now">$180 for 1 year</p>
+            <a class="btn btn-solid" href="signup.html?plan=year">Start now</a>
+          </article>
+        </div>
+      </div>
+      <svg class="deco right" width="80" height="90" viewBox="0 0 80 90" aria-hidden="true"><circle cx="40" cy="28" r="14" fill="#d9e2ff"/><rect x="24" y="46" width="32" height="28" rx="8" fill="#c9d4fb"/></svg>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

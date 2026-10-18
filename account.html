@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account | FalconX</title>
+  <meta name="description" content="FalconX demo member area.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="account">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+  <main id="content" class="block">
+    <div class="container dash" id="account-app">
+      <aside class="side">
+        <a class="active" href="account.html">Overview</a>
+        <a href="download.html">Downloads</a>
+        <a href="pricing.html">Change plan</a>
+        <a href="support.html#contact">Contact</a>
+        <button class="btn btn-ghost" type="button" id="logout" style="margin-top:12px">Log out</button>
+      </aside>
+      <section>
+        <p class="banner" id="welcome" hidden></p>
+        <h1>Hello, <span id="hello">member</span></h1>
+        <p class="muted">This member area is local to the browser. No tunnel is actually opened.</p>
+        <div class="stat-row">
+          <article class="stat"><span>Plan</span><b id="plan-label">2 years</b></article>
+          <article class="stat"><span>Devices in use</span><b>2 / 5</b></article>
+          <article class="stat"><span>Status</span><b>Ready</b></article>
+        </div>
+        <label style="margin-top:18px;max-width:320px">Switch plan
+          <select id="plan-switch">
+            <option value="month">1 month</option>
+            <option value="year">1 year</option>
+            <option value="year2">2 years</option>
+            <option value="business">Business</option>
+            <option value="vip">VIP</option>
+          </select>
+        </label>
+        <h2 style="margin-top:28px">Devices</h2>
+        <table>
+          <thead><tr><th>Name</th><th>Platform</th><th>Last seen</th></tr></thead>
+          <tbody>
+            <tr><td>Studio laptop</td><td>Windows</td><td>Today</td></tr>
+            <tr><td>Pocket</td><td>Android</td><td>Yesterday</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

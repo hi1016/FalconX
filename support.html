@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support | FalconX</title>
+  <meta name="description" content="FalconX FAQ, wiki, tutorials, contact, and bug bounty.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="support">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+  <main id="content">
+    <section class="page-hero"><div class="container"><h1>Support</h1><p>Answers for setup, billing, and the protocols. The desk is staffed all day on a real deployment. This page stores messages only in your browser.</p></div></section>
+    <section class="block"><div class="container prose">
+      <h2>FAQ</h2>
+      <div class="faq-item"><button type="button" aria-expanded="false">How many devices can connect?<span>+</span></button><div class="a" hidden>A personal plan allows five devices online at the same time. VIP raises that to seven. Business is billed per seat.</div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false">What is Shadow Mode?<span>+</span></button><div class="a" hidden>Shadow Mode is FalconX’s protocol option for networks that interfere with ordinary VPN traffic. Turn it on in the app when a standard protocol will not connect.</div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false">Do you keep activity logs?<span>+</span></button><div class="a" hidden>The published policy says FalconX does not keep a record of sites visited or traffic contents. Account and payment records are kept for billing. Read the privacy page for the demo wording.</div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false">Can I get a refund?<span>+</span></button><div class="a" hidden>The demo refund window is 7 days on first-time personal plans if the apps were not a fit. Details are on the refund page.</div></div>
+      <h2 id="wiki" style="margin-top:36px">Wiki</h2>
+      <div class="card-grid">
+        <article class="card"><h3>First connection</h3><p>Install, sign in, pick a city, and leave the kill switch on if you are on a network you do not trust.</p></article>
+        <article class="card"><h3>Router applet</h3><p>Flash only the build listed for your model. The applet then covers every device on that Wi-Fi.</p></article>
+        <article class="card"><h3>Protocols</h3><p>Start with WireGuard. Switch to OpenWeb or Shadow Mode when the network blocks the first choice.</p></article>
+      </div>
+      <h2 id="videos" style="margin-top:36px">Video tutorials</h2>
+      <div class="links-inline">
+        <button class="btn btn-ghost" type="button" data-video="Install on Windows">Install on Windows</button>
+        <button class="btn btn-ghost" type="button" data-video="Turn on Shadow Mode">Turn on Shadow Mode</button>
+        <button class="btn btn-ghost" type="button" data-video="Share via a router">Share via a router</button>
+      </div>
+      <h2 id="contact" style="margin-top:36px">Contact</h2>
+      <form id="contact-form" class="form">
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Topic<select name="topic"><option>Setup</option><option>Billing</option><option>Router</option><option>Something else</option></select></label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn btn-solid" type="submit">Send</button>
+      </form>
+      <p class="banner" id="contact-msg" hidden>Saved in this browser. Nothing was sent to a server.</p>
+      <h2 id="bounty" style="margin-top:36px">Bug bounty</h2>
+      <p>Describe a problem in the demo site. Do not include exploit steps for other people’s systems. Reports stay in this browser.</p>
+      <form id="bounty-form" class="form">
+        <label>Summary<input name="summary" required></label>
+        <label>What happened<textarea required></textarea></label>
+        <button class="btn btn-solid" type="submit">File report</button>
+      </form>
+      <p class="banner" id="bounty-msg" hidden>Report noted locally. Thank you.</p>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

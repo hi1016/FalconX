@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tools | FalconX</title>
+  <meta name="description" content="FalconX connection checks: public IP, leak notes, and a local password strength meter.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tools">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+  <main id="content">
+    <section class="page-hero"><div class="container"><h1>Extra tools</h1><p>Checks you can run in this browser. Nothing here scans other people’s machines.</p></div></section>
+    <section class="block"><div class="container card-grid">
+      <article class="card" id="ip"><h3>What is my IP</h3><p>Asks a public lookup service for the address it sees.</p><button class="btn btn-solid" type="button" id="ip-btn">Check address</button><p id="ip-out" class="help"></p></article>
+      <article class="card" id="leak"><h3>VPN leak notes</h3><p>A leak test compares your public address, DNS, and WebRTC address. On this demo, compare the IP result with the city you selected in a real client. If they differ, the tunnel is not the path in use.</p></article>
+      <article class="card" id="password"><h3>Password strength</h3><p>Checked only on this page. The value is not sent anywhere.</p><input id="password-check" type="password" placeholder="Type a sample password" autocomplete="new-password"><div class="meter" aria-hidden="true"><span id="meter"></span></div><p id="pass-label" class="help">Type to check strength locally</p></article>
+      <article class="card" id="ports"><h3>Port notes</h3><p>Port forwarding is enabled per device from the member area on supported cities. This page does not probe ports on any host.</p></article>
+      <article class="card" id="ipv6"><h3>IPv6 check</h3><p>If a network gives you an IPv6 address while the VPN only covers IPv4, traffic can leave outside the tunnel. FalconX apps disable that path while connected. This browser page cannot toggle it for you.</p></article>
+      <article class="card" id="dns"><h3>DNS check</h3><p>While FalconX is connected, name lookups should go to FalconX resolvers. If a leak test shows your ISP’s resolvers, reconnect with App Guard enabled.</p></article>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

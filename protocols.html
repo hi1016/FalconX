@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protocols | FalconX</title>
+  <meta name="description" content="FalconX protocols: OpenWeb, Shadow Mode, and WireGuard.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="protocols">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+  <main id="content">
+    <section class="page-hero"><div class="container"><h1>VPN protocols</h1><p>Pick the tunnel that matches the network. The app can also choose for you.</p></div></section>
+    <section class="block"><div class="container card-grid">
+      <article class="card" id="wireguard"><h3>WireGuard</h3><p>The default on open networks. Small codebase, quick reconnects, strong throughput on FalconX hardware.</p></article>
+      <article class="card" id="openweb"><h3>OpenWeb</h3><p>Wraps the tunnel so it resembles ordinary web traffic. Useful on networks that block uncommon ports.</p></article>
+      <article class="card" id="shadow"><h3>Shadow Mode</h3><p>FalconX’s own option for restrictive networks, built so VPN traffic is harder to single out.</p></article>
+      <article class="card"><h3>OpenVPN</h3><p>Still available when you need a widely supported fallback.</p></article>
+      <article class="card"><h3>IKEv2</h3><p>A fit for phones that roam between Wi-Fi and cellular.</p></article>
+      <article class="card"><h3>How to choose</h3><p>Leave the app on automatic. Switch to OpenWeb or Shadow Mode only if the first connection fails.</p></article>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

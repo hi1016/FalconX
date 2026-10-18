@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Network | FalconX</title>
+  <meta name="description" content="FalconX server locations, speed notes, dedicated IPs, and multi-hop.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="network">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+  <main id="content">
+    <section class="page-hero"><div class="container"><h1>VPN servers</h1><p>120 cities in 48 countries. Figures below are sample lab notes for the demo, not a live speed test.</p></div></section>
+    <section class="block" id="speed"><div class="container">
+      <h2>Why FalconX is fast</h2>
+      <p class="prose">Locations run on dedicated machines rather than crowded slices. That keeps evening throughput closer to the line you already pay for.</p>
+      <table>
+        <thead><tr><th>Route</th><th>Sample download</th><th>Sample latency</th></tr></thead>
+        <tbody>
+          <tr><td>Los Angeles → Tokyo</td><td>186 Mbps</td><td>112 ms</td></tr>
+          <tr><td>London → Frankfurt</td><td>420 Mbps</td><td>18 ms</td></tr>
+          <tr><td>Singapore → Sydney</td><td>240 Mbps</td><td>94 ms</td></tr>
+        </tbody>
+      </table>
+      <h2 id="dedicated" style="margin-top:32px">Dedicated IPs</h2>
+      <p>A dedicated address stays yours. Remote desktops and allow-listed services stop seeing a shared exit. VIP includes one. Other plans can add it.</p>
+      <h2 id="multihop" style="margin-top:32px">Multi-hop</h2>
+      <p>Multi-hop enters in one country and exits in another. Use it when you want the entry and exit separated. It costs some speed, which the app shows before you connect.</p>
+      <h2 style="margin-top:32px">More locations</h2>
+      <ul class="country-cols">
+        <li>Singapore</li><li>Australia</li><li>South Korea</li><li>United Arab Emirates</li>
+        <li>South Africa</li><li>Mexico</li><li>Poland</li><li>Hong Kong</li>
+      </ul>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
