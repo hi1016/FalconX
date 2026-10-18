@@ -101,6 +101,13 @@
     var planInput = signup.querySelector("[name=plan]");
     if (params().get("email")) emailInput.value = params().get("email");
     if (params().get("plan")) planInput.value = params().get("plan");
+    var platformNames = { windows: "Windows", macos: "macOS", linux: "Linux", ios: "iPhone or iPad", android: "Android", router: "router" };
+    var platformNote = $("#platform-note");
+    var platform = params().get("platform");
+    if (platformNote && platformNames[platform]) {
+      platformNote.hidden = false;
+      platformNote.textContent = "You started from the " + platformNames[platform] + " download. This form saves a demo account in this browser. It does not download an installer.";
+    }
     signup.addEventListener("submit", function (event) {
       event.preventDefault();
       var email = emailInput.value.trim().toLowerCase();
@@ -309,17 +316,78 @@
   }
 
   var filterButtons = $$(".filters button");
+  var platformCards = $$("[data-platform]");
+  function applyFilter(key) {
+    filterButtons.forEach(function (b) {
+      var on = b.getAttribute("data-filter") === key;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    var shown = 0;
+    platformCards.forEach(function (card) {
+      var hide = key !== "all" && card.getAttribute("data-platform") !== key;
+      card.hidden = hide;
+      if (!hide) shown += 1;
+    });
+    var status = $("#filter-status");
+    if (status) {
+      var label = key === "all" ? "all platforms" : key + (shown === 1 ? " option" : " options");
+      status.textContent = "Showing " + shown + " " + label;
+    }
+  }
   if (filterButtons.length) {
     filterButtons.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        filterButtons.forEach(function (b) { b.classList.remove("on"); });
-        btn.classList.add("on");
-        var key = btn.getAttribute("data-filter");
-        $$("[data-platform]").forEach(function (card) {
-          card.hidden = key !== "all" && card.getAttribute("data-platform") !== key;
-        });
+        applyFilter(btn.getAttribute("data-filter"));
       });
     });
+  }
+
+  var devicePick = $("#device-pick");
+  if (devicePick && platformCards.length) {
+    var ua = navigator.userAgent || "";
+    var detected = "android";
+    if (/Android/i.test(ua)) detected = "android";
+    else if (/iPhone|iPad|iPod/i.test(ua)) detected = "ios";
+    else if (/Win/i.test(ua)) detected = "windows";
+    else if (/Mac/i.test(ua)) detected = "macos";
+    else if (/Linux/i.test(ua)) detected = "linux";
+    var current = document.getElementById(detected);
+    if (current) {
+      var badge = document.createElement("span");
+      badge.className = "badge";
+      badge.textContent = "This device";
+      current.classList.add("is-current");
+      current.insertBefore(badge, current.firstChild);
+      current.parentNode.insertBefore(current, current.parentNode.firstChild);
+      var deviceIcon = $("#device-icon");
+      var platformIcon = current.querySelector(".plat-icon svg");
+      if (deviceIcon && platformIcon) deviceIcon.replaceChildren(platformIcon.cloneNode(true));
+      $("#device-kicker").textContent = "For this device";
+      $("#device-name").textContent = current.getAttribute("data-label");
+      $("#device-note").textContent = current.getAttribute("data-note");
+      var action = $("#device-action");
+      action.textContent = current.getAttribute("data-cta");
+      action.setAttribute("href", current.getAttribute("data-href"));
+      if (current.getAttribute("data-external") === "true") {
+        action.setAttribute("target", "_blank");
+        action.setAttribute("rel", "noopener noreferrer");
+      } else {
+        action.removeAttribute("target");
+        action.removeAttribute("rel");
+      }
+      if (detected !== "android") {
+        var alt = $("#device-alt");
+        alt.hidden = false;
+        alt.innerHTML = 'The live app is for Android. <a href="https://play.google.com/store/apps/details?id=com.celoyn.falconx">Get it on Google Play</a>.';
+      }
+    }
+    var hashId = (location.hash || "").replace("#", "");
+    var hashed = document.getElementById(hashId);
+    if (hashed && hashed.getAttribute("data-platform")) {
+      applyFilter(hashed.getAttribute("data-platform"));
+      hashed.scrollIntoView();
+    }
   }
 
   document.addEventListener("keydown", function (event) {

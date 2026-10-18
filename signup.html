@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sign up | FalconX</title>
   <meta name="description" content="Create a FalconX demo account and choose a plan.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icon.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -17,6 +17,7 @@
     <form class="auth-card form" id="signup-form">
       <h1>Create your FalconX account</h1>
       <p class="help">Checkout is simulated. Do not use a real password. It is stored only in this browser.</p>
+      <p class="help" id="platform-note" hidden></p>
       <label>Email<input name="email" type="email" autocomplete="email" required></label>
       <label>Password<input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
       <label>Plan
