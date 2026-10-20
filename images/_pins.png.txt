@@ -1,0 +1,22 @@
+Canada LAND 461,201
+United States LAND 456,270
+Mexico LAND 433,351
+Brazil LAND 705,565
+United Kingdom LAND 992,199
+Netherlands LAND 1030,200
+Sweden LAND 1083,157
+France LAND 1014,230
+Germany LAND 1058,205
+Poland LAND 1108,200
+Czech Republic LAND 1086,213
+Switzerland LAND 1046,228
+Italy LAND 1069,251
+Spain LAND 979,262
+UAE LAND 1302,348
+India LAND 1439,360
+Hong Kong LAND 1648,367
+South Korea LAND 1653,281
+Japan LAND 1716,285
+Singapore LAND 1599,470
+South Africa LAND 1136,629
+Australia LAND 1745,609
