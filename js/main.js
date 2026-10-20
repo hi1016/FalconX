@@ -234,7 +234,7 @@
       input.value = "";
       var reply = "A specialist would pick this up on a live desk. For this demo, browse Pricing or Support for plan and setup notes.";
       if (/price|plan|cost/i.test(text)) reply = "Personal plans are listed on the pricing page. Business seats are quoted separately.";
-      else if (/windows|mac|android|ios|linux|router|download/i.test(text)) reply = "App pages list system requirements. Installers are not shipped with this demo.";
+      else if (/windows|mac|android|ios|linux|router|download/i.test(text)) reply = "Windows and Linux clients download from this site. Android is on Google Play. macOS and iOS continue to signup.";
       else if (/shadow|protocol|wireguard/i.test(text)) reply = "Shadow Mode, OpenWeb, and WireGuard are described on the protocols page.";
       setTimeout(function () { addBubble(reply, false); }, 300);
     });
@@ -369,6 +369,9 @@
       var action = $("#device-action");
       action.textContent = current.getAttribute("data-cta");
       action.setAttribute("href", current.getAttribute("data-href"));
+      var fileName = current.getAttribute("data-download");
+      if (fileName) action.setAttribute("download", fileName);
+      else action.removeAttribute("download");
       if (current.getAttribute("data-external") === "true") {
         action.setAttribute("target", "_blank");
         action.setAttribute("rel", "noopener noreferrer");
@@ -376,10 +379,11 @@
         action.removeAttribute("target");
         action.removeAttribute("rel");
       }
-      if (detected !== "android") {
+      var storeCard = platformCards.filter(function (card) { return card.getAttribute("data-external") === "true"; })[0];
+      if (storeCard && detected !== storeCard.id) {
         var alt = $("#device-alt");
         alt.hidden = false;
-        alt.innerHTML = 'The live app is for Android. <a href="https://play.google.com/store/apps/details?id=com.celoyn.falconx">Get it on Google Play</a>.';
+        alt.innerHTML = 'A store build is listed for ' + storeCard.getAttribute("data-label") + '. <a href="' + storeCard.getAttribute("data-href") + '">Open that listing</a>.';
       }
     }
     var hashId = (location.hash || "").replace("#", "");
